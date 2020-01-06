@@ -1,7 +1,5 @@
-// FIXME: Is waiting for service worker to install necessary?
-registerServiceWorker()
-  .then(renderPage)
-  .catch(renderPage);
+registerServiceWorker();
+renderPage();
 
 function registerServiceWorker() {
   return new Promise((resolve, reject) => {
